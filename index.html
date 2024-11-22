@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veículo dos Sonhos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Veículo dos Sonhos</h1>
+    <p>Bem-vindo à sua lista de desejos de veículos! Aqui você pode registrar os carros dos seus sonhos, incluindo seus dados para contato. Complete o formulário abaixo e mantenha seus favoritos organizados.</p>
+
+    <form id="dreamVehicleForm">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required placeholder="Digite seu nome">
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+
+      <label for="phone">Telefone:</label>
+      <input type="tel" id="phone" name="phone" required placeholder="Digite seu telefone">
+
+      <label for="model">Modelo do Veículo:</label>
+      <input type="text" id="model" name="model" required placeholder="Digite o modelo">
+
+      <label for="brand">Marca:</label>
+      <input type="text" id="brand" name="brand" required placeholder="Digite a marca">
+
+      <label for="year">Ano de Fabricação:</label>
+      <input type="number" id="year" name="year" required placeholder="Digite o ano">
+
+      <button type="submit">Salvar</button>
+    </form>
+
+    <h2>Lista de Desejos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>E-mail</th>
+          <th>Telefone</th>
+          <th>Modelo</th>
+          <th>Marca</th>
+          <th>Ano</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="vehicleList">
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
